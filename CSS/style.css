@@ -194,6 +194,7 @@ border-top-right-radius: 0;
 }
 #hero-content{
     padding: 1.5rem 0;
+    padding-top: 4rem;
 }
     #hero-text h1{
     font-size: 2.4rem;
