@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;   
+}
+.navbar-nav{
+    /* background-color: #0d6efd; */
+    background-color: #0b5ed7;
+     justify-content: space-between;
+    border-radius: 10px;
+    padding: 1px 0;
+}
+.navbar-nav li a i{
+    font-size: 1.15rem;
+    color: white;
+}
+.navbar-nav li a{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: white;
+    font-family: 'lexend deca', sans-serif;
+}
+.navbar button{
+    font-size: 1.1rem;
+    color: white;
+    padding: .6rem 1.5rem;
+    font-weight: 300;
+    font-family: 'lexend deca', sans-serif;
+}
+.navbar button:hover{
+    color: white;
+    background-color:#0b5ed7 ;
+}
+nav .btn{
+    background-color: #0b5ed7;
+    padding: 3px 0;
+}
+
+.background-hero-section{
+    height: 90vh;
+    width: 100%;
+    border-radius: 10px;
+      background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/alternate-hero-section-hiit.jpg');
+    /* background-image: 
+    linear-gradient(rgba(0, 82, 204, 0.6), rgba(0, 82, 204, 0.6)),
+    url('../assets/alternate-hero-section-hiit.jpg'); */
+    /* background: url('../assets/alternate-hero-section-hiit.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#hero-content{
+    padding-top: 13%;
+    color: white;
+}
+#hero-text h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+#hero-text p{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    line-height: 1.9rem;
+   font-weight: 300;
+   letter-spacing: 1px;
+    font-family: 'lexend deca', sans-serif;
+    width: 60%;
+}
+#hero-button .btn{
+    background-color: #0b5ed7;
+    color: white;
+    font-weight: 500;
+    margin-right: 1rem;
+    padding: .7rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+#hero-button .btn a i{
+    font-size: 1.1rem;
+
+}
+#partner-section, #courses-section, #clients-section{
+    padding: 2rem 1rem;
+    background-color:white;
+    
+}
+#partner-section h1, #courses-section h1, #clients-section h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 3%;
+    text-align: center;
+}
+#partner-logos, #clients-logos{
+    margin-top: 4rem;
+}
+
+#courses-section h1{
+    margin-top: 3rem;
+}
+.courses-text, .clients-text{
+    text-align: center;
+}
+#courses-section p, #clients-section p{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'lexend deca', sans-serif;
+}
+#course-cards {
+    margin-top: 3rem;
+}
+
+/* Make columns flex containers so cards stretch equally */
+#course-cards > [class*='col-'] {
+    display: flex;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: 'poppins', sans-serif;
+}
+
+.card-body p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    flex-grow: 1;
+}
+
+.card-body .card-link {
+    margin-top: auto;
+}
+
+.card-body .card-link i {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Add this to the bottom of your style.css file */
+
+.btn-show-more {
+    background-color: #0b5ed7;
+    color: white;
+    font-weight: 500;
+    padding: .7rem 2rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-show-more:hover {
+    background-color: #0952b8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth animation for collapsing */
+.collapse {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collapsing {
+    transition: height 0.35s ease;
+}
+
+
+
+
+
+@media (min-width:350px) and (max-width:768px) {
+    #hero-section{
+    padding: .5rem 0;
+
+
+ 
+}
+    .background-hero-section{
+    height: 100%;
+    width: 100%;
+  border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+#hero-content{
+    padding: 1.5rem 0;
+    padding-top: 4rem;
+}
+    #hero-text h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 100%;
+}
+#hero-text p{
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+   font-weight: 300;
+    width:100%;
+}
+#hero-button .btn{
+    margin-right: auto;
+    margin-left: auto;
+    padding: .7rem 1rem;
+    
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    
+}
+#hero-button .btn a {
+    font-size: 1rem;
+
+}
+}@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;   
+}
+.navbar-nav{
+    /* background-color: #0d6efd; */
+    background-color: #0b5ed7;
+     justify-content: space-between;
+    border-radius: 10px;
+}
+.navbar-nav li a i{
+    font-size: 1.15rem;
+    color: white;
+}
+.navbar-nav li a{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: white;
+    font-family: 'lexend deca', sans-serif;
+}
+.navbar button{
+    font-size: 1.1rem;
+    color: white;
+    padding: .6rem 1.5rem;
+    font-weight: 300;
+    font-family: 'lexend deca', sans-serif;
+}
+.navbar button:hover{
+    color: white;
+    background-color:#0b5ed7 ;
+}
+nav .btn{
+    background-color: #0b5ed7;
+}
+
+.background-hero-section{
+    height: 90vh;
+    width: 100%;
+    border-radius: 10px;
+      background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../assets/alternate-hero-section-hiit.jpg');
+    /* background-image: 
+    linear-gradient(rgba(0, 82, 204, 0.6), rgba(0, 82, 204, 0.6)),
+    url('../assets/alternate-hero-section-hiit.jpg'); */
+    /* background: url('../assets/alternate-hero-section-hiit.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#hero-content{
+    padding-top: 13%;
+    color: white;
+}
+#hero-text h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+#hero-text p{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    line-height: 1.9rem;
+   font-weight: 300;
+   letter-spacing: 1px;
+    font-family: 'lexend deca', sans-serif;
+    width: 60%;
+}
+#hero-button .btn{
+    background-color: #0b5ed7;
+    color: white;
+    font-weight: 500;
+    margin-right: 1rem;
+    padding: .7rem 1.5rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+#hero-button .btn a i{
+    font-size: 1.1rem;
+
+}
+#partner-section, #courses-section, #clients-section{
+    padding: 2rem 1rem;
+    background-color:white;
+    
+}
+#partner-section h1, #courses-section h1, #clients-section h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 3%;
+    text-align: center;
+}
+#partner-logos{
+    margin-top: 2rem;
+}
+
+#courses-section h1{
+    margin-top: 3rem;
+}
+.courses-text, .clients-text{
+    text-align: center;
+}
+#courses-section p, #clients-section p{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'lexend deca', sans-serif;
+}
+#course-cards {
+    margin-top: 3rem;
+}
+
+/* Make columns flex containers so cards stretch equally */
+#course-cards > [class*='col-'] {
+    display: flex;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: 'poppins', sans-serif;
+}
+
+.card-body p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    flex-grow: 1;
+}
+
+.card-body .card-link {
+    margin-top: auto;
+}
+
+.card-body .card-link i {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:350px) and (max-width:768px) {
+    #hero-section{
+    padding: .5rem 0;
+
+
+ 
+}
+    .background-hero-section{
+    height: 100%;
+    width: 100%;
+  border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+#hero-content{
+    padding: 1.5rem 0;
+    padding-top: 4rem;
+}
+    #hero-text h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 100%;
+}
+#hero-text p{
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+   font-weight: 300;
+    width:100%;
+}
+#hero-button .btn{
+    margin-right: auto;
+    margin-left: auto;
+    padding: .7rem 1rem;
+    
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    
+}
+#hero-button .btn a {
+    font-size: 1rem;
+
+}
+}
