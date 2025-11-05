@@ -17,6 +17,7 @@ body {
   border-radius: 10px;
   padding: 1px 0;
 }
+
 .navbar-nav li a i {
   font-size: 1.15rem;
   color: white;
@@ -27,6 +28,20 @@ body {
   color: white;
   font-family: "lexend deca", sans-serif;
 }
+
+.navbar-nav .nav-item .nav-link,
+.navbar-nav .nav-item .nav-link i {
+  transition: .2s ease-in;
+  color: white;
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item:hover .nav-link i {
+  color: whitesmoke;
+  transform: translateY(-1px);
+}
+
+
 .navbar button {
   font-size: 1.1rem;
   color: white;
@@ -40,6 +55,11 @@ body {
 }
 nav .btn {
   background-color: #0b5ed7;
+  transition: .3s ease-in;
+}
+nav .btn:hover{
+  background-color: #0a58ca;
+  transform: scale(1.05);
 }
 
 .background-hero-section {
@@ -57,11 +77,11 @@ nav .btn {
   background-repeat: no-repeat;
 }
 #hero-content {
-  padding-top: 13%;
+  padding-top: 14%;
   color: white;
 }
 #hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 #hero-text p {
@@ -86,6 +106,10 @@ nav .btn {
   border-radius: 15px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+}
+#hero-button .btn:hover{
+   background-color: #0a58ca;
+  transform: scale(1.05);
 }
 #hero-button .btn a i {
   font-size: 1.1rem;
@@ -132,8 +156,7 @@ nav .btn {
   margin-top: 3rem;
 }
 
-/* Make columns flex containers so cards stretch equally */
-#course-cards > [class*="col-"] {
+#course-cards col {
   display: flex;
 }
 
@@ -150,7 +173,8 @@ nav .btn {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); */
 }
 
 .card-img-top {
@@ -222,9 +246,10 @@ nav .btn {
   font-family: "Lexend Deca", sans-serif;
 }
 .testimonial-card {
-  border: none;
+  border: 1px dashed #0b5ed7;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   display: flex;
@@ -233,11 +258,11 @@ nav .btn {
   max-width: 380px;
   flex-shrink: 0;
   margin: 0 15px;
-  padding: 1.5rem;  /* Reduced from 2rem */
+  padding: .7rem;  
   background: white;
 }
 .testimonial-card:hover {
-  transform: translateY(-8px);
+  transform: scale(1.1);
   box-shadow: 0 8px 25px rgba(11, 94, 215, 0.15);
 }
 
@@ -280,6 +305,7 @@ nav .btn {
   overflow: hidden;
   position: relative;
   margin-top: 2rem;
+  padding: 2rem 0;
 }
 
 #carousel-wrapper {
@@ -317,8 +343,7 @@ nav .btn {
   .background-hero-section {
     height: 100%;
     width: 100%;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border: 0;
   }
   #hero-content {
     padding: 1.5rem 0;
