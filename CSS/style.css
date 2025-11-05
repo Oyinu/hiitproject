@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+
 }
 #navbar {
   position: sticky;
   top: 0;
   z-index: 100;
+    padding: 0 0.5rem;
 }
 .navbar-nav {
   /* background-color: #0d6efd; */
@@ -81,6 +83,7 @@ nav .btn:hover{
   color: white;
 }
 #hero-text h1 {
+  font-family: 'montserrat', sans-serif;
   font-size: 4rem;
   font-weight: 600;
 }
@@ -117,15 +120,18 @@ nav .btn:hover{
 #partner-section,
 #courses-section,
 #clients-section,
-#about-section {
-  padding: 2rem 1rem;
+#about-section,
+.pricing-plans {
+  padding: 2rem;
   background-color: white;
+  
 }
 #partner-section h1,
 #courses-section h1,
 #clients-section h1,
 #testimonial-section h1,
-#about-section h1 {
+#about-section h1,
+#services-section h1 {
   font-size: 3rem;
   font-weight: 600;
   margin-top: 3%;
@@ -141,7 +147,8 @@ nav .btn:hover{
 }
 .courses-text,
 .clients-text,
-.testimonial-text {
+.testimonial-text,
+.services-text {
   text-align: center;
 }
 #courses-section p,
@@ -167,7 +174,7 @@ nav .btn:hover{
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
-#course-cards {
+#course-cards, #services-cards {
   margin-top: 3rem;
 }
 
@@ -231,6 +238,12 @@ nav .btn:hover{
   padding: .5rem;
   transition: .3s ease-in;
 }
+#card-body-service button {
+  background-color: #0b5ed7;
+  width: 50%;
+  padding: .3rem .5rem;
+  transition: .3s ease-in;
+}
 .card-body button:hover{
 background-color: #0a58ca;
 color: white;
@@ -273,6 +286,56 @@ color: white;
   color: #0b5ed7;
   text-align: center;
   font-family: "Lexend Deca", sans-serif;
+}
+#pricing-card{
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+}
+.pricing-plans .card:hover{
+  transform: none;
+}
+#pricing-card h4{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: black;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+}
+#pricing-text{
+  font-size: 3rem;
+  color: #0b5ed7;
+  margin-top: 7rem;
+  margin-bottom: 2.5rem;
+}
+#pricing-card .price{
+  font-size: 2.5rem;
+  color: #0b5ed7;
+  text-align: center;
+}
+#pricing-card ul li{
+  list-style-type:none;
+  text-align: left;
+  line-height: 1.6;
+}
+#pricing-card button{
+  background-color: #0b5ed7;
+  width: 50%;
+  padding: .5rem;
+  transition: .3s ease-in;
+  margin-top: 1rem;
+  color: white;
+ margin: 0 auto;
+}
+#pricing-card button:hover{
+  background-color: #0a58ca;
+  color: white;
 }
 .testimonial-card {
   border: 1px dashed #0b5ed7;
