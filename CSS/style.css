@@ -97,7 +97,7 @@ nav .btn:hover{
 .main-details{
   display: block;
 }
-#hero-button .btn {
+#hero-button .btn{
   background-color: #0b5ed7;
   color: white;
   font-weight: 500;
@@ -116,15 +116,17 @@ nav .btn:hover{
 }
 #partner-section,
 #courses-section,
-#clients-section {
+#clients-section,
+#about-section {
   padding: 2rem 1rem;
   background-color: white;
 }
 #partner-section h1,
 #courses-section h1,
 #clients-section h1,
-#testimonial-section h1 {
-  font-size: 2.5rem;
+#testimonial-section h1,
+#about-section h1 {
+  font-size: 3rem;
   font-weight: 600;
   margin-top: 3%;
   text-align: center;
@@ -151,6 +153,19 @@ nav .btn:hover{
   font-weight: 300;
 
   font-family: "lexend deca", sans-serif;
+}
+.courses-text, .testimonial-text, .clients-text {
+ width: 60%;
+  margin: 0 auto
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
 }
 #course-cards {
   margin-top: 3rem;
@@ -210,13 +225,27 @@ nav .btn:hover{
 .card-body .card-link {
   margin-top: auto;
 }
+.card-body button {
+  background-color: #0b5ed7;
+  width: 35%;
+  padding: .5rem;
+  transition: .3s ease-in;
+}
+.card-body button:hover{
+background-color: #0a58ca;
+color: white;
+}
 #card-body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;  /* Reduced from 1rem */
 }
+.card-link{
+  text-align: center;
+  color: white;
+}
 .card-body .card-link i {
-  color: #333;
+  color: white;
   font-size: 1.5rem;
 }
 #card-body p {
@@ -314,9 +343,6 @@ nav .btn:hover{
   width: max-content;
 }
 
-#carousel-wrapper:hover {
-  animation-play-state: paused;
-}
 
 @keyframes scroll {
   0% {
@@ -378,4 +404,23 @@ nav .btn:hover{
   .main-details{
   display: none;
 }
+.card-body button {
+  background-color: #0b5ed7;
+  width: 40%;
+  padding: .5rem;
+  transition: .3s ease-in;
+}
+.courses-text, .testimonial-text, .clients-text, .about-text {
+ width: 100%;
+  margin: 0 auto
+}
+.about-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 }
