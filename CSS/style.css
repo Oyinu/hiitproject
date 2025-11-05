@@ -74,6 +74,9 @@ nav .btn {
   font-family: "lexend deca", sans-serif;
   width: 60%;
 }
+.main-details{
+  display: block;
+}
 #hero-button .btn {
   background-color: #0b5ed7;
   color: white;
@@ -337,7 +340,7 @@ nav .btn {
   #hero-button .btn {
     margin-right: auto;
     margin-left: auto;
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
 
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -347,4 +350,7 @@ nav .btn {
   #hero-button .btn a {
     font-size: 1rem;
   }
+  .main-details{
+  display: none;
+}
 }
