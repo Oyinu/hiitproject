@@ -1,26 +1,16 @@
-        // Change button text on toggle
-        const collapseElement = document.getElementById('moreCourses');
-        const toggleBtn = document.getElementById('toggleBtn');
 
-        collapseElement.addEventListener('show.bs.collapse', function () {
-            toggleBtn.textContent = 'Show Less';
-        });
-
-        collapseElement.addEventListener('hide.bs.collapse', function () {
-            toggleBtn.textContent = 'Show More Courses';
-        });
     
 
 
         function validateForm(){
-    
-    //name validation
+    let isValid = true;
+
     const fullname = document.querySelector('#fullName');
-    // alert(`Welcome to My office ${fullname.value}`)
     const name_err = document.querySelector('.name-err');
     if(fullname.value == ''){
-        // alert('This field is required')
+
         name_err.textContent = "This field is required"
+        isValid = false;
 
     }else{
         name_err.textContent = ""
@@ -31,50 +21,77 @@
 
     if (email.value.trim() == ''){
         email_err.textContent = 'This field if required';
+        isValid = false;
     }else if(!email_regex.test(email.value.trim())){
         email_err.textContent = "Please enter a valid email address."
+        isValid = false;
     }else{
         email_err.textContent = "";
+    }
+
+    const matricNumber = document.querySelector('#matricNumber')
+    const matric_err = document.querySelector('.matric-err')
+    if(matricNumber.value == ''){
+        matric_err.textContent = 'This field is required';
+        isValid = false;
+    }
+    else{
+        matric_err.textContent = '';
     }
 
     const phoneNumber = document.querySelector('#phone')
     const phone_err = document.querySelector('.phone-err')
     if(phoneNumber.value == ''){
         phone_err.textContent = 'This field is required';
-    }else if(phoneNumber.value = isNaN){
+        isValid = false;
+    }else if(phoneNumber.value == isNaN){
         phone_err.textContent = 'This field must be a number'
+        isValid = false;
     }
     else if(phoneNumber.value.length < 11 ){
         phone_err.textContent = 'Input a correct Phone Number'
+        isValid = false;
     }
     else{
-        phone_err.textContent = ''
+        phone_err.textContent = '';
     }
 
-    const password = document.querySelector('#password')
-    const password_err = document.querySelector('.password-err')
-    if(password.value == ''){
-        password_err.textContent = 'This field is required'
+
+    const school = document.querySelector('#school')
+    const school_err = document.querySelector('.school-err')
+    if(school.value == ''){
+        school_err.textContent = 'This field is required';
+        isValid = false;
     }
-    else if(password.value.length < 10 ){
-        password_err.textContent = 'password must be a total of 10 characters'
-    }else if(password.value.length > 10){
-        password_err.textContent = 'password must not exceed a total character of 10'
-    }else{
-        password_err.textContent = ''
+    else{
+        school_err.textContent = '';
     }
-    
-    const confirmPassword = document.querySelector('#confirm_password')
-    const confirmPassword_err = document.querySelector('.confirm-err')
-    if(confirmPassword.value == ''){
-        confirmPassword_err.textContent = 'This field is required'
-    }else if(confirmPassword.value != password.value){
-        confirmPassword_err.textContent = 'Confirm password must match the password inputted'
-    }else{
-        confirmPassword_err.textContent = ''
+        const deparment = document.querySelector('#department')
+    const department_err = document.querySelector('.department-err')
+    if(department.value == ''){
+        department_err.textContent = 'This field is required';
+        isValid = false;
     }
+    else{
+        department_err.textContent = '';
+    }
+
+        const level = document.querySelector('#level')
+    const level_err = document.querySelector('.level-err')
+    if(level.value == ''){
+        level_err.textContent = 'This field is required';
+        isValid = false;
+    }
+    else{
+        level_err.textContent = '';
+    }
+    return isValid;
 }
 document.querySelector('#myForm').addEventListener('submit', (event)=>{
+
+    const validForm = validateForm();
+
+    if(!validForm){
    event.preventDefault();
-   validateForm();
+    }
 })

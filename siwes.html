@@ -5,30 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siwes Application Form</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./validate.css">
 </head>
 
 <body>
-    <h1>Form Validation</h1>
+    <div class="form-nav">
+        <img src="./assets/cropped-hiit-logo-1.png" alt="">
+        <a href="index.html">Back to Home</a>
+    </div>
+    <div class="heading">
+        <h1>Siwes Application Form</h1>
+    </div>
+
 
     <form action="" id="myForm">
-        <label for="">Name: </label>
-        <input type="text" id="fullName" placeholder="Enter Name">
-        <p class="name-err"></p>
-        <label for="">Email:</label>
-        <input type="email" id="email" placeholder="Enter Email">
-        <p class="email-err"></p>
-        <label for="">Phone:</label>
-        <input type="text" id="phone" placeholder="Enter Phone">
-        <p class="phone-err"></p>
-        <label for="">Password: </label>
-        <input type="password" id="password" placeholder="Enter password">
-        <p class="password-err"></p>
-        <label for="">Confirm Password: </label>
-        <input type="password" id="confirm_password" placeholder="re-enter password">
-        <p class="confirm-err"></p>
+        <div class="row d-flex justify-content-center align-items-center py-4" id="form-section">
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <label for="">Name: </label>
+                <input type="text" id="fullName" placeholder="Enter Name">
+                <p class="name-err"></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+
+                <label for="">Email:</label>
+                <input type="email" id="email" placeholder="Enter Email">
+                <p class="email-err"></p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="">Matric Number:</label>
+                <input type="text" id="matricNumber" placeholder="Enter Matric Number">
+                <p class="matric-err"></p>
+            </div>
+
+      <div class="col-lg-6 col-md-4 col-sm-12">
+                <label for="">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Enter Phone Number">
+                <p class="phone-err"></p>
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="">School:</label>
+                <input type="text" id="school" placeholder="Enter School">
+                <p class="school-err"></p>
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+
+                <label for="">Department:</label>
+                <input type="text" id="department" placeholder="Enter Department">
+                <p class="department-err"></p>
+
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <label for="">Level:</label>
+                <input type="text" id="level" placeholder="Enter Level">
+                <p class="level-err"></p>
+
+            </div>
+        </div>
         <input type="submit" value="submit">
     </form>
+
+    <footer id="contact">
+        <div class="container-fluid" id="footer-section">
+            <h1>Contact <span style="color: #0b5ed7;">Us</span></h1>
+            <div class="row d-flex justify-content-center align-items-center text-center py-1" id="footer-content">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
+                    <img src="./assets/cropped-hiit-logo-1.png" width="30%" alt="">
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4 d-flex justify-content-center align-items-center">
+                    <ul class=" d-flex px-3" id="social-links">
+                        <li class="nav-item"><a href="" class="nav-link d-flex align-items-center"><i
+                                    class='bxl  bx-facebook-circle'></i> </a></li>
+                        <li class="nav-item"><a href="" class="nav-link d-flex align-items-center"><i
+                                    class='bxl  bx-twitter'></i> </a></li>
+                        <li class="nav-item"><a href="" class="nav-link d-flex align-items-center"><i
+                                    class='bxl  bx-whatsapp'></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="pt-3" style="color: white;">
+            <div class="row d-flex justify-content-center align-items-center text-center py-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-block justify-content-center align-items-center"
+                    id="location">
+                    <h3>Abuja Training Centre:</h3>
+                    <p><i class='bx  bx-location p-1'></i> Coscharis Plaza, 2nd floor, beside Guaranty Trust Bank Area
+                        3, Garki, Abuja.</p>
+                    <p><strong>Phone Numbers</strong> <i class='bx  bx-phone-incoming p-1'></i>:08062757345,
+                        08032030196, 08072653279
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-block justify-content-center align-items-center"
+                    id="location">
+                    <h3>Lagos - Lekki Training Centre:</h3>
+                    <p><i class='bx  bx-location p-1'></i>2nd Floor Bakky Plaza, Lekki Phase 2, Agungi, opposite Prince
+                        Ebano Supermarket.</p>
+                    <p><strong>Phone Numbers</strong><i class='bx  bx-phone-incoming p-1'></i>: 08072653279</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-block justify-content-center align-items-center"
+                    id="location">
+                    <h3>Lagos - Ikeja Training Centre:</h3>
+                    <p><i class='bx  bx-location p-1'></i> 27 Obafemi Awolowo Way, Beside Obafemi Awolowo House, Ikeja,
+                        Lagos.</p>
+                    <p><strong>Phone Numbers</strong><i class='bx  bx-phone-incoming p-1'></i>: 08161660043,
+                        08022705992, 08072653279
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-block justify-content-center align-items-center"
+                    id="location">
+                    <h3>Kano Training Centre:</h3>
+                    <p><i class='bx  bx-location p-1'></i> Al-Usabs House,
+                        15/17, Zaria Road, Kano.</p>
+                    <p><strong>Phone Numbers</strong><i class='bx  bx-phone-incoming p-1'></i>: 08032030202, 08032922059
+                        08072653279.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-block justify-content-center align-items-center"
+                    id="location">
+                    <h3>Ibadan Training Centre: </h3>
+                    <p><i class='bx  bx-location p-1'></i> Choice Plaza, 90/91, Challenge Road, Ibadan.
+                    </p>
+                    <p><strong>Phone Numbers</strong><i class='bx  bx-phone-incoming p-1'></i>: 08170222841,
+                        08159821587, 08072653279.
+                    </p>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <p style="color: white; text-align: center; padding-top: 1rem;">
+                &copy; 2025 HiiT PLC. All rights reserved.
+            </p>
+    </footer>
+
+    <script src="./Javascript/bootstrap.min.js"></script>
     <script src="./Javascript/script.js"></script>
 </body>
 
