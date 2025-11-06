@@ -145,11 +145,8 @@ nav .btn:hover {
 #partner-logos,
 #clients-logos {
   margin-top: 4rem;
-  opacity: 0;
-  transform: translateX(-100px);
-  animation: slideLeft linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+ transform: translateX(-100px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 #courses-section h1 {
@@ -172,9 +169,7 @@ nav .btn:hover {
   font-family: "lexend deca", sans-serif;
   opacity: 0;
   transform: translateX(-100px);
-  animation: slideLeft linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .courses-text,
 .testimonial-text,
@@ -191,10 +186,8 @@ nav .btn:hover {
   margin-top: 5rem;
   margin-bottom: 4rem;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 #course-cards,
 #services-cards {
@@ -215,10 +208,8 @@ nav .btn:hover {
   display: flex;
   flex-direction: column;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+transform: scale(0.8);
+
 }
 
 .card:hover {
@@ -237,10 +228,8 @@ nav .btn:hover {
   flex-direction: column;
   flex-grow: 1;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+    transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .card-body h3 {
@@ -250,10 +239,8 @@ nav .btn:hover {
   color: #333;
   font-family: "poppins", sans-serif;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .card-body p {
@@ -266,10 +253,8 @@ nav .btn:hover {
   font-family: "Lexend Deca", sans-serif;
   flex-grow: 1;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .card-body .card-link {
@@ -296,10 +281,8 @@ nav .btn:hover {
   flex-direction: column;
   gap: 0.5rem;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .card-link {
   text-align: center;
@@ -344,10 +327,7 @@ nav .btn:hover {
   height: 100%;
   padding: 2rem;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+ transform: scale(0.8);
 }
 .pricing-plans .card:hover {
   transform: none;
@@ -405,10 +385,7 @@ nav .btn:hover {
   padding: 0.7rem;
   background: white;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
 }
 .testimonial-card:hover {
   transform: scale(1.1);
@@ -435,10 +412,8 @@ nav .btn:hover {
 .testimonial-name {
   margin-top: 1rem;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .testimonial-name h5 {
   font-size: 1rem;
@@ -447,10 +422,8 @@ nav .btn:hover {
   margin: 0;
   font-family: "poppins", sans-serif;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .testimonial-name p {
   font-size: 0.85rem;
@@ -459,10 +432,8 @@ nav .btn:hover {
   margin: 0;
   font-family: "Lexend Deca", sans-serif;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 #carousel-container {
   width: 100%;
@@ -470,11 +441,8 @@ nav .btn:hover {
   position: relative;
   margin-top: 2rem;
   padding: 2rem 0;
-  opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+   transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 #carousel-wrapper {
@@ -514,10 +482,8 @@ nav .btn:hover {
 #footer-content {
   margin-top: 2rem;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 #footer-section {
   background-color: #001775;
@@ -526,19 +492,15 @@ nav .btn:hover {
   color: white;
   font-family: "poppins", sans-serif;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 #location h3 {
   font-size: 1.5rem;
   color: white;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 #location p {
   font-size: 1rem;
@@ -547,10 +509,46 @@ nav .btn:hover {
   color: whitesmoke;
   font-family: "Lexend Deca", sans-serif;
   opacity: 0;
-  transform: scale(0.5);
-  animation: scaleUp linear forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  transform: scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+#partner-logos.in-view,
+#clients-logos.in-view,
+#courses-section p.in-view,
+#clients-section p.in-view,
+#testimonial-section p.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-container.in-view,
+.card.in-view,
+.card-body.in-view,
+.card-body h3.in-view,
+.card-body p.in-view,
+#card-body.in-view,
+#pricing-card.in-view,
+.testimonial-card.in-view,
+.testimonial-name.in-view,
+.testimonial-name h5.in-view,
+.testimonial-name p.in-view,
+#carousel-container.in-view,
+#footer-content.in-view,
+#footer-section h1.in-view,
+#location h3.in-view,
+#location p.in-view {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Keep card hover effect separate */
+.card.in-view:hover {
+  transform: translateY(-5px) scale(1);
+}
+
+.testimonial-card.in-view:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(11, 94, 215, 0.15);
 }
 .container-fluid {
   padding-left: 0;
