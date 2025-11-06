@@ -433,7 +433,7 @@ color: white;
   transition: .3s ease-in;
 }
 #social-links .nav-item .nav-link i:hover{
-  color: #0b5ed7;
+
   transform: scale(1.2);
 }
 #footer-section{
@@ -460,10 +460,14 @@ color: white;
   color: whitesmoke;
   font-family: "Lexend Deca", sans-serif;
 }
-
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 @media (min-width: 350px) and (max-width: 768px) {
   body {
     overflow-x: none;
+    width: 100%;
   }
   #hero-section {
     padding: 0.5rem 0;
