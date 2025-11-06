@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
-
 }
 #navbar {
   position: sticky;
   top: 0;
   z-index: 100;
+}
+.navbar-brand {
+  padding-left: 2rem;
 }
 .navbar-nav {
   /* background-color: #0d6efd; */
@@ -32,7 +35,7 @@ body {
 
 .navbar-nav .nav-item .nav-link,
 .navbar-nav .nav-item .nav-link i {
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
   color: white;
 }
 
@@ -41,7 +44,6 @@ body {
   color: whitesmoke;
   transform: translateY(-1px);
 }
-
 
 .navbar button {
   font-size: 1.1rem;
@@ -56,9 +58,9 @@ body {
 }
 nav .btn {
   background-color: #0b5ed7;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
-nav .btn:hover{
+nav .btn:hover {
   background-color: #0a58ca;
   transform: scale(1.05);
 }
@@ -82,9 +84,10 @@ nav .btn:hover{
   color: white;
 }
 #hero-text h1 {
-  font-family: 'montserrat', sans-serif;
+  font-family: "montserrat", sans-serif;
   font-size: 4rem;
   font-weight: 600;
+  animation: fadeInUp 1s ease-out 0.3s backwards;
 }
 #hero-text p {
   font-size: 1.1rem;
@@ -95,11 +98,12 @@ nav .btn:hover{
   letter-spacing: 1px;
   font-family: "lexend deca", sans-serif;
   width: 60%;
+  animation: fadeInUp 1s ease-out 0.3s backwards;
 }
-.main-details{
+.main-details {
   display: block;
 }
-#hero-button .btn{
+#hero-button .btn {
   background-color: #0b5ed7;
   color: white;
   font-weight: 500;
@@ -109,8 +113,8 @@ nav .btn:hover{
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-#hero-button .btn:hover{
-   background-color: #0a58ca;
+#hero-button .btn:hover {
+  background-color: #0a58ca;
   transform: scale(1.05);
 }
 #hero-button .btn a i {
@@ -125,7 +129,6 @@ nav .btn:hover{
 #footer-section {
   padding: 2rem 1rem;
   background-color: white;
-  
 }
 #partner-section h1,
 #courses-section h1,
@@ -142,6 +145,11 @@ nav .btn:hover{
 #partner-logos,
 #clients-logos {
   margin-top: 4rem;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideLeft linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 #courses-section h1 {
@@ -162,10 +170,17 @@ nav .btn:hover{
   font-weight: 300;
 
   font-family: "lexend deca", sans-serif;
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideLeft linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-.courses-text, .testimonial-text, .clients-text {
- width: 60%;
-  margin: 0 auto
+.courses-text,
+.testimonial-text,
+.clients-text {
+  width: 60%;
+  margin: 0 auto;
 }
 .about-container {
   display: flex;
@@ -175,8 +190,14 @@ nav .btn:hover{
   gap: 2rem;
   margin-top: 5rem;
   margin-bottom: 4rem;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-#course-cards, #services-cards {
+#course-cards,
+#services-cards {
   margin-top: 3rem;
 }
 
@@ -193,6 +214,11 @@ nav .btn:hover{
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .card:hover {
@@ -210,6 +236,11 @@ nav .btn:hover{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .card-body h3 {
@@ -218,6 +249,11 @@ nav .btn:hover{
   margin-bottom: 1rem;
   color: #333;
   font-family: "poppins", sans-serif;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .card-body p {
@@ -229,6 +265,11 @@ nav .btn:hover{
   margin-bottom: 1rem;
   font-family: "Lexend Deca", sans-serif;
   flex-grow: 1;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .card-body .card-link {
@@ -237,25 +278,30 @@ nav .btn:hover{
 .card-body button {
   background-color: #0b5ed7;
   width: 35%;
-  padding: .5rem;
-  transition: .3s ease-in;
+  padding: 0.5rem;
+  transition: 0.3s ease-in;
 }
 #card-body-service button {
   background-color: #0b5ed7;
   width: 50%;
-  padding: .3rem .5rem;
-  transition: .3s ease-in;
+  padding: 0.3rem 0.5rem;
+  transition: 0.3s ease-in;
 }
-.card-body button:hover{
-background-color: #0a58ca;
-color: white;
+.card-body button:hover {
+  background-color: #0a58ca;
+  color: white;
 }
 #card-body {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;  /* Reduced from 1rem */
+  gap: 0.5rem;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-.card-link{
+.card-link {
   text-align: center;
   color: white;
 }
@@ -267,11 +313,10 @@ color: white;
   font-size: 0.9rem;
   line-height: 1.6;
   color: #555;
-  text-align: justify;  /* Changed from center to justify */
+  text-align: justify;
   margin: 0 0 1rem 0;
   width: 100%;
   font-family: "Lexend Deca", sans-serif;
-  
 }
 #card-body h4 {
   font-size: 1.2rem;
@@ -289,7 +334,7 @@ color: white;
   text-align: center;
   font-family: "Lexend Deca", sans-serif;
 }
-#pricing-card{
+#pricing-card {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -298,11 +343,16 @@ color: white;
   flex-direction: column;
   height: 100%;
   padding: 2rem;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-.pricing-plans .card:hover{
+.pricing-plans .card:hover {
   transform: none;
 }
-#pricing-card h4{
+#pricing-card h4 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -310,32 +360,32 @@ color: white;
   text-align: center;
   font-family: "poppins", sans-serif;
 }
-#pricing-text{
+#pricing-text {
   font-size: 3rem;
   color: #0b5ed7;
   margin-top: 7rem;
   margin-bottom: 2.5rem;
 }
-#pricing-card .price{
+#pricing-card .price {
   font-size: 2.5rem;
   color: #0b5ed7;
   text-align: center;
 }
-#pricing-card ul li{
-  list-style-type:none;
+#pricing-card ul li {
+  list-style-type: none;
   text-align: left;
   line-height: 1.6;
 }
-#pricing-card button{
+#pricing-card button {
   background-color: #0b5ed7;
   width: 50%;
-  padding: .5rem;
-  transition: .3s ease-in;
+  padding: 0.5rem;
+  transition: 0.3s ease-in;
   margin-top: 1rem;
   color: white;
- margin: 0 auto;
+  margin: 0 auto;
 }
-#pricing-card button:hover{
+#pricing-card button:hover {
   background-color: #0a58ca;
   color: white;
 }
@@ -352,8 +402,13 @@ color: white;
   max-width: 380px;
   flex-shrink: 0;
   margin: 0 15px;
-  padding: .7rem;  
+  padding: 0.7rem;
   background: white;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .testimonial-card:hover {
   transform: scale(1.1);
@@ -377,8 +432,13 @@ color: white;
   border: 3px solid #0b5ed7;
 }
 
-.testimonial-name{
-    margin-top: 1rem;
+.testimonial-name {
+  margin-top: 1rem;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .testimonial-name h5 {
   font-size: 1rem;
@@ -386,6 +446,11 @@ color: white;
   color: #333;
   margin: 0;
   font-family: "poppins", sans-serif;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .testimonial-name p {
   font-size: 0.85rem;
@@ -393,6 +458,11 @@ color: white;
   color: #666;
   margin: 0;
   font-family: "Lexend Deca", sans-serif;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 #carousel-container {
   width: 100%;
@@ -400,6 +470,11 @@ color: white;
   position: relative;
   margin-top: 2rem;
   padding: 2rem 0;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 #carousel-wrapper {
@@ -407,7 +482,6 @@ color: white;
   animation: scroll 35s linear infinite;
   width: max-content;
 }
-
 
 @keyframes scroll {
   0% {
@@ -420,84 +494,186 @@ color: white;
 #testimonial-section {
   width: 100%;
 }
-#social-links{
+#social-links {
   list-style-type: none;
 }
-#social-links .nav-item{
-  margin: 0 .7rem;
+#social-links .nav-item {
+  margin: 0 0.7rem;
 }
-#social-links .nav-item .nav-link i{
+#social-links .nav-item .nav-link i {
   font-size: 2rem;
   color: white;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
-#social-links .nav-item .nav-link i:hover{
-
+#social-links .nav-item .nav-link i:hover {
   transform: scale(1.2);
 }
-#footer-section{
+#footer-section {
   margin-top: 3rem;
 }
-#footer-content{
+#footer-content {
   margin-top: 2rem;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-#footer-section{
-   background-color: #001775;
+#footer-section {
+  background-color: #001775;
 }
-#footer-section h1{
+#footer-section h1 {
   color: white;
   font-family: "poppins", sans-serif;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-#location h3{
+#location h3 {
   font-size: 1.5rem;
   color: white;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
-#location p{
+#location p {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
   color: whitesmoke;
   font-family: "Lexend Deca", sans-serif;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: scaleUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes scaleUp {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (min-width: 350px) and (max-width: 768px) {
-    body {
+  body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
     width: 100%;
   }
-  
-  /* Force remove all padding */
+  .navbar-brand {
+    padding-left: 0 !important;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 13%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0b5ed7;
+    opacity: 0.95;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+   .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+   width: 100%;
+    padding:0;
+  }
+
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav li a {
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    text-align: center;
+  }
+  .navbar-toggler {
+    position: relative;
+    z-index: 10000;
+    border: 2px solid white;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
   .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  
+
   .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  
+
   .col {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
-  /* Remove border radius on mobile */
+
   .background-hero-section {
     border-radius: 0;
   }
-  
-  /* Adjust hero text padding for mobile */
-  #hero-text, #hero-button {
+
+  #hero-text,
+  #hero-button {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
-
 
   .background-hero-section {
     height: 90vh;
@@ -533,41 +709,42 @@ color: white;
   #hero-button .btn a {
     font-size: 1.1rem;
   }
-  .main-details{
-  display: none;
+  .main-details {
+    display: none;
+  }
+  .card-body button {
+    background-color: #0b5ed7;
+    width: 40%;
+    padding: 0.5rem;
+    transition: 0.3s ease-in;
+  }
+  .courses-text,
+  .testimonial-text,
+  .clients-text,
+  .about-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #partner-section,
+  #courses-section,
+  #clients-section,
+  #about-section,
+  .pricing-plans {
+    padding: 1rem;
+    background-color: white;
+  }
+  #card-body-service button {
+    background-color: #0b5ed7;
+    width: 60%;
+    padding: 0.3rem;
+    transition: 0.3s ease-in;
+  }
 }
-.card-body button {
-  background-color: #0b5ed7;
-  width: 40%;
-  padding: .5rem;
-  transition: .3s ease-in;
-}
-.courses-text, .testimonial-text, .clients-text, .about-text {
- width: 100%;
-  margin: 0 auto
-}
-.about-container {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-#partner-section,
-#courses-section,
-#clients-section,
-#about-section,
-.pricing-plans {
-  padding: 1rem;
-  background-color: white;
-  
-}
-#card-body-service button {
-  background-color: #0b5ed7;
-  width: 60%;
-  padding: .3rem;
-  transition: .3s ease-in;
-}
-}
-
